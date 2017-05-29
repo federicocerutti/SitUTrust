@@ -1,0 +1,635 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/federicocerutti/SitUTrust/blob/master/Onto/SitUTrustOnto.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/federicocerutti/SitUTrust/blob/master/Onto/SitUTrustOnto.owl">
+    <Prefix name="" IRI="http://cicero.cs.cf.ac.uk/onto/SitUTrustOnto"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="OSItrust" IRI="http://cicero.cs.cf.ac.uk/onto/OSItrust#"/>
+    <Prefix name="OSItrust1" IRI="http://cicero.cs.cf.ac.uk/onto/OSItrust/"/>
+    <Prefix name="vaccinations" IRI="http://cicero.cs.cf.ac.uk/onto/vaccinations/"/>
+    <Prefix name="untitled-ontology-11" IRI="http://cicero.cs.cf.ac.uk/onto/trustosint/ontology#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Version 2.0rc1 (c) 2017 Federico Cerutti &lt;CeruttiF@cardiff.ac.uk&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Version: 1.0 (c) 2017 Owain Carpanini &lt;CarpaniniOJ@cardiff.ac.uk&gt;</Literal>
+    </Annotation>
+    <Declaration>
+        <NamedIndividual IRI="#CompletelyReliable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trust"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ScientificPaper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Source"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="vaccinationCausesAutismhttps://www.ncbi.nlm.nih.gov/pubmed/20137807"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Query"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/higherTrustThan"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="vaccinations:Medicine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Issue"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="vaccinations:Vaccination"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasTrustSameDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/equalTrustThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/lowerTrustThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="vaccinations:implementsDefault"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="vaccinations:defaultMedicineScientificPapers"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Unreliable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="vaccinations:vaccinationsCauseAutism"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/incomparable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrustDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSource"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CannotBeJudged"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DefaultTrust"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/contradicts"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#autoAdded"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#context"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UsuallyReliable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FairlyReliable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#url"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasTrustSameSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasTrustSameQuery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="vaccinationCausesAutismhttps://www.ncbi.nlm.nih.gov/pubmed/9500320"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasQuery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NotUsuallyReliable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.ncbi.nlm.nih.gov/pubmed/20137807"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.ncbi.nlm.nih.gov/pubmed/9500320"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="vaccinations:Medicine"/>
+        <Class IRI="#Query"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="vaccinations:Vaccination"/>
+        <Class abbreviatedIRI="vaccinations:Medicine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/DefaultTrust"/>
+        <Class IRI="#Trust"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Issue"/>
+        <Class IRI="#Source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ScientificPaper"/>
+        <Class IRI="#Source"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="/DefaultTrust"/>
+        <NamedIndividual abbreviatedIRI="vaccinations:defaultMedicineScientificPapers"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="vaccinations:Vaccination"/>
+        <NamedIndividual abbreviatedIRI="vaccinations:vaccinationsCauseAutism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrustDescriptor"/>
+        <NamedIndividual IRI="#CannotBeJudged"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrustDescriptor"/>
+        <NamedIndividual IRI="#CompletelyReliable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrustDescriptor"/>
+        <NamedIndividual IRI="#FairlyReliable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrustDescriptor"/>
+        <NamedIndividual IRI="#NotUsuallyReliable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrustDescriptor"/>
+        <NamedIndividual IRI="#UsuallyReliable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrustDescriptor"/>
+        <NamedIndividual IRI="/Unreliable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/ScientificPaper"/>
+        <NamedIndividual IRI="https://www.ncbi.nlm.nih.gov/pubmed/20137807"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/ScientificPaper"/>
+        <NamedIndividual IRI="https://www.ncbi.nlm.nih.gov/pubmed/9500320"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Trust"/>
+        <NamedIndividual IRI="vaccinationCausesAutismhttps://www.ncbi.nlm.nih.gov/pubmed/20137807"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Trust"/>
+        <NamedIndividual IRI="vaccinationCausesAutismhttps://www.ncbi.nlm.nih.gov/pubmed/9500320"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDescriptor"/>
+        <NamedIndividual abbreviatedIRI="vaccinations:defaultMedicineScientificPapers"/>
+        <NamedIndividual IRI="#CompletelyReliable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/equalTrustThan"/>
+        <NamedIndividual IRI="#CannotBeJudged"/>
+        <NamedIndividual IRI="#CannotBeJudged"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/incomparable"/>
+        <NamedIndividual IRI="#CannotBeJudged"/>
+        <NamedIndividual IRI="#CompletelyReliable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/incomparable"/>
+        <NamedIndividual IRI="#CannotBeJudged"/>
+        <NamedIndividual IRI="#FairlyReliable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/incomparable"/>
+        <NamedIndividual IRI="#CannotBeJudged"/>
+        <NamedIndividual IRI="#NotUsuallyReliable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/incomparable"/>
+        <NamedIndividual IRI="#CannotBeJudged"/>
+        <NamedIndividual IRI="#UsuallyReliable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/incomparable"/>
+        <NamedIndividual IRI="#CannotBeJudged"/>
+        <NamedIndividual IRI="/Unreliable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/equalTrustThan"/>
+        <NamedIndividual IRI="#CompletelyReliable"/>
+        <NamedIndividual IRI="#CompletelyReliable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/higherTrustThan"/>
+        <NamedIndividual IRI="#CompletelyReliable"/>
+        <NamedIndividual IRI="#UsuallyReliable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/equalTrustThan"/>
+        <NamedIndividual IRI="#FairlyReliable"/>
+        <NamedIndividual IRI="#FairlyReliable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/higherTrustThan"/>
+        <NamedIndividual IRI="#FairlyReliable"/>
+        <NamedIndividual IRI="#NotUsuallyReliable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/equalTrustThan"/>
+        <NamedIndividual IRI="#NotUsuallyReliable"/>
+        <NamedIndividual IRI="#NotUsuallyReliable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/higherTrustThan"/>
+        <NamedIndividual IRI="#NotUsuallyReliable"/>
+        <NamedIndividual IRI="/Unreliable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/equalTrustThan"/>
+        <NamedIndividual IRI="#UsuallyReliable"/>
+        <NamedIndividual IRI="#UsuallyReliable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/higherTrustThan"/>
+        <NamedIndividual IRI="#UsuallyReliable"/>
+        <NamedIndividual IRI="#FairlyReliable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/equalTrustThan"/>
+        <NamedIndividual IRI="/Unreliable"/>
+        <NamedIndividual IRI="/Unreliable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/contradicts"/>
+        <NamedIndividual IRI="https://www.ncbi.nlm.nih.gov/pubmed/20137807"/>
+        <NamedIndividual IRI="https://www.ncbi.nlm.nih.gov/pubmed/9500320"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="vaccinations:implementsDefault"/>
+        <NamedIndividual IRI="vaccinationCausesAutismhttps://www.ncbi.nlm.nih.gov/pubmed/20137807"/>
+        <NamedIndividual abbreviatedIRI="vaccinations:defaultMedicineScientificPapers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSource"/>
+        <NamedIndividual IRI="vaccinationCausesAutismhttps://www.ncbi.nlm.nih.gov/pubmed/20137807"/>
+        <NamedIndividual IRI="https://www.ncbi.nlm.nih.gov/pubmed/20137807"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasQuery"/>
+        <NamedIndividual IRI="vaccinationCausesAutismhttps://www.ncbi.nlm.nih.gov/pubmed/20137807"/>
+        <NamedIndividual abbreviatedIRI="vaccinations:vaccinationsCauseAutism"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="vaccinations:implementsDefault"/>
+        <NamedIndividual IRI="vaccinationCausesAutismhttps://www.ncbi.nlm.nih.gov/pubmed/9500320"/>
+        <NamedIndividual abbreviatedIRI="vaccinations:defaultMedicineScientificPapers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSource"/>
+        <NamedIndividual IRI="vaccinationCausesAutismhttps://www.ncbi.nlm.nih.gov/pubmed/9500320"/>
+        <NamedIndividual IRI="https://www.ncbi.nlm.nih.gov/pubmed/9500320"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasQuery"/>
+        <NamedIndividual IRI="vaccinationCausesAutismhttps://www.ncbi.nlm.nih.gov/pubmed/9500320"/>
+        <NamedIndividual abbreviatedIRI="vaccinations:vaccinationsCauseAutism"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSource"/>
+        <ObjectProperty IRI="/hasTrustSameSource"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasDescriptor"/>
+        <ObjectProperty IRI="/hasTrustSameDescriptor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasQuery"/>
+        <ObjectProperty IRI="/hasTrustSameQuery"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/higherTrustThan"/>
+        <ObjectProperty IRI="/lowerTrustThan"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="/incomparable"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="/higherTrustThan"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="/lowerTrustThan"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="vaccinations:implementsDefault"/>
+        <Class IRI="#Trust"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSource"/>
+        <Class IRI="#Trust"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/equalTrustThan"/>
+        <Class IRI="#TrustDescriptor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasDescriptor"/>
+        <Class IRI="#Trust"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasQuery"/>
+        <Class IRI="#Trust"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/higherTrustThan"/>
+        <Class IRI="#TrustDescriptor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="vaccinations:implementsDefault"/>
+        <Class IRI="/DefaultTrust"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSource"/>
+        <Class IRI="#Source"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/equalTrustThan"/>
+        <Class IRI="#TrustDescriptor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasDescriptor"/>
+        <Class IRI="#TrustDescriptor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasQuery"/>
+        <Class IRI="#Query"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/higherTrustThan"/>
+        <Class IRI="#TrustDescriptor"/>
+    </ObjectPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Source"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasDescriptor"/>
+                <Variable IRI="urn:swrl#ay"/>
+                <Variable IRI="urn:swrl#ty"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasDescriptor"/>
+                <Variable IRI="urn:swrl#ax"/>
+                <Variable IRI="urn:swrl#tx"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Trust"/>
+                <Variable IRI="urn:swrl#ax"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Source"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasTrustSameSource"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#ax"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasTrustSameSource"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#ay"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Trust"/>
+                <Variable IRI="urn:swrl#ay"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasQuery"/>
+                <Variable IRI="urn:swrl#ay"/>
+                <Variable IRI="urn:swrl#q"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/equalTrustThan"/>
+                <Variable IRI="urn:swrl#tx"/>
+                <Variable IRI="urn:swrl#ty"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasQuery"/>
+                <Variable IRI="urn:swrl#ax"/>
+                <Variable IRI="urn:swrl#q"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Query"/>
+                <Variable IRI="urn:swrl#q"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/contradicts"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="/Issue"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Source"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasDescriptor"/>
+                <Variable IRI="urn:swrl#ay"/>
+                <Variable IRI="urn:swrl#ty"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasDescriptor"/>
+                <Variable IRI="urn:swrl#ax"/>
+                <Variable IRI="urn:swrl#tx"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Trust"/>
+                <Variable IRI="urn:swrl#ax"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Source"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasTrustSameSource"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#ax"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasTrustSameSource"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#ay"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Trust"/>
+                <Variable IRI="urn:swrl#ay"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasQuery"/>
+                <Variable IRI="urn:swrl#ay"/>
+                <Variable IRI="urn:swrl#q"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasQuery"/>
+                <Variable IRI="urn:swrl#ax"/>
+                <Variable IRI="urn:swrl#q"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/lowerTrustThan"/>
+                <Variable IRI="urn:swrl#tx"/>
+                <Variable IRI="urn:swrl#ty"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Query"/>
+                <Variable IRI="urn:swrl#q"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/contradicts"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="/Issue"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Source"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="/Issue"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/contradicts"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="/Issue"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasDescriptor"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="/DefaultTrust"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty abbreviatedIRI="vaccinations:implementsDefault"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Trust"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#TrustDescriptor"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasDescriptor"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>vaccinations:vaccinationsCauseAutism</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Do vaccinations cause authism?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Link queries to source(s)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://www.ncbi.nlm.nih.gov/pubmed/20137807</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">https://www.ncbi.nlm.nih.gov/pubmed/20137807</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://www.ncbi.nlm.nih.gov/pubmed/9500320</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">https://www.ncbi.nlm.nih.gov/pubmed/9500320</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>vaccinationCausesAutismhttps://www.ncbi.nlm.nih.gov/pubmed/20137807</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">vaccinationCausesAutismhttps://www.ncbi.nlm.nih.gov/pubmed/20137807</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>vaccinationCausesAutismhttps://www.ncbi.nlm.nih.gov/pubmed/9500320</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">vaccinationCausesAutismhttps://www.ncbi.nlm.nih.gov/pubmed/9500320</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
